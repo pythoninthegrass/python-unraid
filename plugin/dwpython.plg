@@ -3,14 +3,14 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "dwpython">
 <!ENTITY author    "desertwitch">
-<!ENTITY version   "2025.01.09">
+<!ENTITY version   "2025.02.26">
 <!ENTITY launch    "Settings/dwpython">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/python-unRAID/main">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/packages">
 <!ENTITY plgPATH   "/boot/config/plugins/&name;">
-<!ENTITY plgNAME   "dwpython-2025.01.09-x86_64-1">
-<!ENTITY plgMD5    "77e877c466d0e831b00d331c2887d934">
+<!ENTITY plgNAME   "dwpython-2025.02.26-x86_64-1">
+<!ENTITY plgMD5    "ba78b4c0e461bb67aa2bf5ef14228f73">
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
 
