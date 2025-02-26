@@ -28,6 +28,8 @@ If the Python version changes between the updates, take note of your installed p
 A convenient way is using "pip freeze" (before) and "pip install" (after) commands to save/restore packages.
 
 Packages only need re-install updating to a new major/minor version, e.g. 3.12 to 3.13 (NOT 3.12.1 to 3.12.2).
+### 2025.02.26
+- fix: future-proofing changes to base plugin structure
 ### 2025.01.09
 - all backends: updated python-pip-24.2 to python-pip-24.3.1
 - all backends: updated python-setuptools-75.1.0 to python-setuptools-75.8.0
@@ -280,7 +282,6 @@ if [ ! -e /tmp/dwpython-autoexec.sh ]; then
         (/tmp/dwpython-autoexec.sh 2>&amp;1 | logger -t "dwpython-autoexec") >/dev/null 2>&amp;1 &amp;
     fi
 fi
-/etc/cron.daily/python-poller conntest >/dev/null 2>&amp;1 &amp;
 echo ""
 echo "-------------------------------------------------------------"
 echo " Python 3 for UNRAID has been installed."
