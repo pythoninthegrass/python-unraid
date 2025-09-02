@@ -74,9 +74,9 @@ Packages only need re-install updating to a new major/minor version, e.g. 3.12 t
 killall python-poller >/dev/null 2>&amp;1
 if [ ! -e /boot/config/plugins/dwpython.plg ] &amp;&amp; type python3 >/dev/null 2>&amp;1; then
     echo ""
-    echo "-------------------------------------------------------------"
-    echo " !!! INSTALLATION ABORTED"
-    echo " !!! python3 is already installed on your system."
+    echo "--------------------------------------------------------------------------------"
+    echo " INSTALLATION ABORTED"
+    echo " python3 is already installed on your system."
     echo ""
     echo " A. Another plugin could have installed conflicting packages."
     echo " One such known plugin would be 'Cache Mover', also installing Python."
@@ -85,15 +85,15 @@ if [ ! -e /boot/config/plugins/dwpython.plg ] &amp;&amp; type python3 >/dev/null
     echo " These could be present from previous NerdTools/NerdPack installations."
     echo ""
     echo " Please manually resolve any such package conflicts and try again afterwards."
-    echo "-------------------------------------------------------------"
+    echo "--------------------------------------------------------------------------------"
     echo ""
     exit 1
 fi
 if [ ! -e /boot/config/plugins/dwpython.plg ] &amp;&amp; type pip3 >/dev/null 2>&amp;1; then
     echo ""
-    echo "-------------------------------------------------------------"
-    echo " !!! INSTALLATION ABORTED"
-    echo " !!! pip3 is already installed on your system."
+    echo "--------------------------------------------------------------------------------"
+    echo " INSTALLATION ABORTED"
+    echo " pip3 is already installed on your system."
     echo ""
     echo " A. Another plugin could have installed conflicting packages."
     echo " One such known plugin would be 'Cache Mover', also installing Python."
@@ -102,7 +102,7 @@ if [ ! -e /boot/config/plugins/dwpython.plg ] &amp;&amp; type pip3 >/dev/null 2>
     echo " These could be present from previous NerdTools/NerdPack installations."
     echo ""
     echo " Please manually resolve any such package conflicts and try again afterwards."
-    echo "-------------------------------------------------------------"
+    echo "--------------------------------------------------------------------------------"
     echo ""
     exit 1
 fi
